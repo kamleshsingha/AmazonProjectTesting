@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Regression</a></td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">74.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">smokeTesting</a></td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">94.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">94.4 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">Regression &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">regressionTesting.AmazonEndToEndTest</td><td><a href="#m1"><b>testUserLogin</b>  </a></td><td class="numi">1</td><td>1692812654908</td><td class="numi">24125</td></tr><tr class="passedodd"><td><a href="#m2"><b>proceedToCheckOut</b>  </a></td><td class="numi">1</td><td>1692812719101</td><td class="numi">461</td></tr><tr class="passedodd"><td><a href="#m3"><b>searchAndAddToCart</b>  </a></td><td class="numi">1</td><td>1692812679038</td><td class="numi">29103</td></tr><tr class="passedodd"><td><a href="#m4"><b>viewAndUpdateCart</b>  </a></td><td class="numi">1</td><td>1692812708143</td><td class="numi">10957</td></tr>
+<tr id="t2"><th colspan="5">smokeTesting &#8212; failed</th></tr>
+<tr class="failedodd"><td>smokeTesing.LoginTest</td><td><a href="#m5"><b>testUserLogin</b>  </a></td><td class="numi">2</td><td>1692812678484</td><td class="numi">45016</td></tr>
+<tr class="failedeven"><td>smokeTesing.LogOutTest</td><td><a href="#m6"><b>LogoutUser</b>  </a></td><td class="numi">1</td><td>1692812655022</td><td class="numi">12591</td></tr>
+<tr class="failedodd"><td>smokeTesing.LoginTest</td><td><a href="#m7"><b>testUserLogin</b>  </a></td><td class="numi">2</td><td>1692812678484</td><td class="numi">45016</td></tr>
+<tr><th colspan="5">smokeTesting &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">smokeTesing.RegisterTest</td><td><a href="#m8"><b>userRegistration</b>  </a></td><td class="numi">1</td><td>1692812737869</td><td class="numi">1837</td></tr><tr class="passedodd"><td><a href="#m9"><b>verifyPage_userRegistration</b>  </a></td><td class="numi">1</td><td>1692812727623</td><td class="numi">10245</td></tr>
+</table>
+<h1>Regression</h1>
+<h2 id="m1">regressionTesting.AmazonEndToEndTest:testUserLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">regressionTesting.AmazonEndToEndTest:proceedToCheckOut</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">regressionTesting.AmazonEndToEndTest:searchAndAddToCart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">regressionTesting.AmazonEndToEndTest:viewAndUpdateCart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>smokeTesting</h1>
+<h2 id="m5">smokeTesing.LoginTest:testUserLogin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>Samosha</td>
+<td>Rajnma</td>
+</tr>
+<tr><td colspan="2">
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_password&quot;}
+  (Session info: chrome=116.0.5845.98)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [56bc14037733454f00bc8d5602ff13c2, findElement {using=id, value=ap_password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.98, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\kamlesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58894/devtoo..., se:cdpVersion: 116.0.5845.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56bc14037733454f00bc8d5602ff13c2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at Pages.AmazonLoginPage.enterPassword(AmazonLoginPage.java:43)
+	at smokeTesing.LoginTest.testUserLogin(LoginTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames</div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">smokeTesing.LogOutTest:LogoutUser</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#nav\-link\-accountList\-nav\-line\-1&quot;}
+  (Session info: chrome=116.0.5845.98)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ce02e469ac259fa99a465b71f11b1bf, findElement {using=id, value=nav-link-accountList-nav-line-1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.98, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\kamlesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58737}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58737/devtoo..., se:cdpVersion: 116.0.5845.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ce02e469ac259fa99a465b71f11b1bf
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at smokeTesing.LogOutTest.LogoutUser(LogOutTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">smokeTesing.LoginTest:testUserLogin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>anda</td>
+<td>kachodi</td>
+</tr>
+<tr><td colspan="2">
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_password&quot;}
+  (Session info: chrome=116.0.5845.98)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [56bc14037733454f00bc8d5602ff13c2, findElement {using=id, value=ap_password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.98, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\kamlesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58894/devtoo..., se:cdpVersion: 116.0.5845.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56bc14037733454f00bc8d5602ff13c2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at Pages.AmazonLoginPage.enterPassword(AmazonLoginPage.java:43)
+	at smokeTesing.LoginTest.testUserLogin(LoginTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames</div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">smokeTesing.RegisterTest:userRegistration</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">smokeTesing.RegisterTest:verifyPage_userRegistration</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
