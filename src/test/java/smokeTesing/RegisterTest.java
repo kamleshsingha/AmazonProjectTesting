@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -22,10 +24,11 @@ public class RegisterTest extends BaseClass {
     private AmazonHeadersTitleBar headersTitleBar;
     private AmazonLoginPage loginPage;
     private AmazonRegisterPage registerPage;
-
+    private static final Logger logger = LoggerFactory.getLogger("RegisterTest.class");
     @BeforeClass
     void setup() {
         driver = initialize();
+        logger.info("driver initialized");
        headersTitleBar = new AmazonHeadersTitleBar(driver);
         registerPage = new AmazonRegisterPage(driver);
     }
@@ -33,7 +36,7 @@ public class RegisterTest extends BaseClass {
     @Test(priority = 1)
     void verifyPage_userRegistration() {
         driver.get("https://amazon.in");
-
+        logger.info("HomePage Loaded.");
         WebElement accoountAnddddList = headersTitleBar.getAccountAndList();
 
        Actions actions = new Actions(driver);
@@ -49,7 +52,7 @@ public class RegisterTest extends BaseClass {
         String title = registerPage.getPageTitle().getText();
 
         Assert.assertEquals(title, "Create Account");
-
+        logger.info("CreateAcoount page Loaded");
     }
 
     @Test(priority = 2)
@@ -59,12 +62,16 @@ public class RegisterTest extends BaseClass {
         registerPage.getPhoneNumber().sendKeys("0000000000");
         registerPage.getEmail().sendKeys("abcdef@zxy.com");
         registerPage.getPassword().sendKeys("lappusasachinkyahaisachinme");
+
+        logger.info("data inserted");
         registerPage.getContinueButton().click();
+        logger.info("submit button clicked");
 
     }
 
     @AfterClass
     public void tearDown() {
         driver.quit();
+        logger.info("program clossed sucessfully");
     }
 }

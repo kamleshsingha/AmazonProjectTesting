@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -16,10 +18,13 @@ import java.util.concurrent.TimeUnit;
 public class BaseClass {
     ChromeOptions chromeOptions;
     WebDriver driver;
+     static final Logger logger = LoggerFactory.getLogger("BaseClass.class");
 @Test
     public WebDriver initialize()
     {
-       System.setProperty("webdriver.chrome.driver",  "chromedriver.exe");
+
+
+       System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 
 
         chromeOptions = new ChromeOptions();
